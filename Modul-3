@@ -1,0 +1,70 @@
+sks = 3
+
+nilai_fisdas = str(input("Masukkan nilai mutu fisdas: "))
+if (nilai_fisdas == "A"):
+    nilai_fisdas_mutu = 4
+elif (nilai_fisdas == "B"):
+    nilai_fisdas_mutu = 3
+elif (nilai_fisdas == "C"):
+    nilai_fisdas_mutu = 2
+elif (nilai_fisdas == "D"):
+    nilai_fisdas_mutu =1
+elif (nilai_fisdas == "E"):
+    nilai_fisdas_mutu = 0
+else:
+    print("Nilai di luar jangkauan")
+
+print(nilai_fisdas_mutu)
+
+nilai_fismat = str(input("Masukkan nilai mutu fismat: "))
+if (nilai_fismat == "A"):
+    nilai_fismat_mutu = 4
+elif (nilai_fismat == "B"):
+    nilai_fismat_mutu = 3
+elif (nilai_fismat == "C"):
+    nilai_fismat_mutu = 2
+elif (nilai_fismat == "D"):
+    nilai_fismat_mutu =1
+elif (nilai_fismat == "E"):
+    nilai_fismat_mutu = 0
+else:
+    print("Nilai di luar jangkauan")
+
+print (nilai_fismat_mutu)
+
+nilai_alpro = str(input("Masukkan nilai mutu alpro: "))
+if (nilai_alpro == "A"):
+    nilai_alpro_mutu = 4
+elif (nilai_alpro == "B"):
+    nilai_alpro_mutu = 3
+elif (nilai_alpro == "C"):
+    nilai_alpro_mutu = 2
+elif (nilai_alpro == "D"):
+    nilai_alpro_mutu = 1
+elif (nilai_alpro == "E"):
+    nilai_alpro_mutu = 0
+else:
+    print("Nilai di luar jangkauan")
+
+print (nilai_alpro_mutu)
+
+nilai_praktikum = str(input("Masukkan nilai mutu praktikum: "))
+if (nilai_praktikum == "A"):
+    nilai_praktikum_mutu = 4
+elif (nilai_praktikum == "B"):
+    nilai_praktikum_mutu = 3
+elif (nilai_praktikum == "C"):
+    nilai_praktikum_mutu = 2
+elif (nilai_praktikum == "D"):
+    nilai_praktikum_mutu = 1
+elif (nilai_praktikum == "E"):
+    nilai_praktikum_mutu = 0
+else:
+    print("Nilai di luar jangkauan")
+
+print (nilai_praktikum_mutu)
+
+jumlah_bobot_nilai = (nilai_fisdas_mutu*sks) + (nilai_fismat_mutu*sks) + (nilai_alpro_mutu*sks) + (nilai_praktikum_mutu)
+jumlah_sks = 9
+IPK = jumlah_bobot_nilai/ jumlah_sks
+print (IPK)
