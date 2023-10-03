@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-04 04:35:43 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVRUUUNJNTk7MjAyMy0xMC0wNDswNDowODo0MiBBTTsyNzU2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVRUUUNJNTk7MjAyMy0xMC0wNDswNDozNTo0MyBBTTsxOzI4NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="banyakDATA"/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <if expression="banyakDATA &lt;= 0">
+                <then>
+                    <output expression="&quot;Input harus lebih besar dari 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="0" end="num" direction="inc" step="1">
+                        <output expression="sum" newline="True"/>
+                        <assign variable="n1" expression="n2"/>
+                        <assign variable="n2" expression="sum"/>
+                        <assign variable="sum" expression="n1 + n2"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
