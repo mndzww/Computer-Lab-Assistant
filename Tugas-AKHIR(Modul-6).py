@@ -10,7 +10,7 @@ print("{}P{} = {}".format(n,r,faktorial(n)/faktorial(b)))
 print("{}C{} = {}".format(n,r,faktorial(n)/(faktorial(b)*faktorial(r))))
 
 
-def deretKonvergen(n,N):
+def deretTAYLOR(n,N):
 counter = 1
 total = 0
 penyebut = 1
@@ -29,4 +29,5 @@ penyebut = 1
   counter += 1
 print("= {}".format(total))
 n = int(input("Masukkan banyaknya suku n : "))
-N = int(input("Masukkan banyak
+N = int(input("Masukkan banyakbilangan : "))
+deretTAYLOR(n,N)
