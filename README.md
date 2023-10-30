@@ -1,2 +1,2 @@
-# aslab_AP
+# Computer lab Assistant
 ASLAB-LABKOM-ALPRO
