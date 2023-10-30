@@ -14,19 +14,19 @@ def deretKonvergen(n,N):
 counter = 1
 total = 0
 penyebut = 1
-while(counter<= N):
-x = n/penyebut
-print("{}/{}".format(n,penyebut), end = " ")
-if counter %2 == 0 :
-total -= x
-if counter !=N :
-print("+", end = " ")
-else:
-total += x
-if counter != N :
-print("-", end = " ")
-penyebut += 2
-counter += 1
+  while(counter<= N):
+    x = n/penyebut
+    print("{}/{}".format(n,penyebut), end = " ")
+    if counter %2 == 0 :
+      total -= x
+      if counter !=N :
+        print("+", end = " ")
+    else:
+      total += x
+      if counter != N :
+        print("-", end = " ")
+  penyebut += 2
+  counter += 1
 print("= {}".format(total))
 n = int(input("Masukkan banyaknya suku n : "))
 N = int(input("Masukkan banyak
